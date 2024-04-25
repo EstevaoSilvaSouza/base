@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Group com Div Expansível e Mapa</title>
+    <style>
+        .list-group {
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 700px;
+        }
+
+        .list-group-item {
+            background-color: #dd0000;
+            padding: 10px 15px;
+            list-style-type: none;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            color: #FFF;
+        }
+
+        .list-group-item:last-child {
+            border-bottom: none;
+        }
+
+        .list-group-item:hover {
+            color: #888;
+            font-weight: bold;
+        }
+
+        .expandable-content {
+            display: none;
+            padding: 10px;
+            margin-top: 0px;
+            width: 98%;
+            overflow: hidden;
+            transition: 0.8s;
+        }
+
+        .box_line {
+            border-bottom: 1px solid #0DA;
+            display: table;
+            width: 100%;
+            transition: 0.8s;
+        }
+
+        .leftcolumn {
+            width: 50%;
+            float: left;
+        }
+
+        .rightcolumn {
+            width: 50%;
+            float: right;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+        }
+
+        .expandsign::after {
+            content: '+';
+            position: absolute;
+            right: 10px;
+            font-weight: bold;
+        }
+
+        .expanded .expandsign::after {
+            content: '-';
+            transition: 0.8s;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+            margin: auto;
+        }
+
+        .inpt {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 60%;
+            height: 35px;
+            border-radius: 2%;
+            color: #000;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .rightcolumn {
+                float: none;
+                width: 100%;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="loader"></div>
+    <div class="inpt">
+        <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar pela cidade" />
+    </div>
+    <ul id="listItens">
+    </ul>
+
+    <script>
+
+        function toggle(id) {
+            var content = document.getElementById(id);
+            var allContents = document.querySelectorAll('.expandable-content');
+            var allItems = document.querySelectorAll('.list-group-item');
+            // Fecha todas as outras divs expandidas
+            for (var i = 0; i < allContents.length; i++) {
+                if (allContents[i].id !== id) {
+                    allContents[i].style.display = 'none';
+                }
+            }
+            // Altera a classe para alterar o sinal
+            for (var j = 0; j < allItems.length; j++) {
+                if (allItems[j].classList.contains('expanded')) {
+                    allItems[j].classList.remove('expanded');
+                }
+            }
+            // Abre ou fecha a div clicada e altera a classe
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                document.querySelector('#' + id).classList.add('expanded');
+            } else {
+                content.style.display = "none";
+                document.querySelector('#' + id).classList.remove('expanded');
+            }
+        }
+
+        async function toggleExpand(id, elemento) {
+            let iframes = document.getElementsByClassName(id);
+            let itemMap = JSON.parse(localStorage.getItem('items'))[id];
+            for (let a = 0; a < iframes.length; a++) {
+                iframes[a].innerHTML = `
+                    <iframe  width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=520&height=400&hl=en&q=${itemMap[a].Lat},${itemMap[a].Lng}&hl=es;z=14&t=&z=12&ie=UTF8&iwloc=B&output=embed"></iframe>
+                `
+            }
+            toggle(id)
+        }
+
+        async function testeFetch(url) {
+            const response = await fetch(url);
+            const data = await response.json();
+            document.getElementById('loader').style.display = 'none';
+            return data
+        }
+
+        // Função debounce para adicionar um pequeno atraso entre as chamadas da função
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+    // Função para iniciar a página com os dados
+    async function start(data) {
+        const listItem = document.getElementById("listItens");
+        localStorage.setItem("items", JSON.stringify(data));
+
+        // Função para filtrar os dados pelo nome da cidade
+        function filterDataByCity(query) {
+            listItem.innerHTML = ''; // Limpa a lista antes de adicionar os itens filtrados
+
+            if(!query.trim()){
+                Object.keys(data).forEach((cityName) => {
+                    const cityData = data[cityName];
+                    listItem.innerHTML += `
+                        <li class="list-group-item" onclick="toggleExpand('${cityName}')"><span class="expandsign"></span>${cityName}</li>
+                        <div id="${cityName}" class="expandable-content">
+                            ${
+                                cityData.map((s) => `
+                                    <div class="box_line">
+                                        <div class="leftcolumn">
+                                            <h3>Drogaria Total - ${s['Nome Fantasia']}</h3>
+                                            <br>
+                                            <p>Cidade: ${s['Cidade']}</p>
+                                            <p>Endereço: ${s['Endereco']} </p>
+                                            <p>Telefone: ${s['Telefone']}</p>
+                                        </div>
+                                        <div  class="rightcolumn ${cityName}">   
+                                        </div>
+                                    </div>
+                                `).join("")
+                            }
+                        </div>
+                    `;
+            });
+            }
+            else{
+
+            
+            // Itera sobre os objetos do JSON e filtra aqueles que contêm a cidade especificada
+            Object.keys(data).forEach((cityName) => {
+                if (cityName.toLowerCase().includes(query.toLowerCase())) {
+                    const cityData = data[cityName];
+                    listItem.innerHTML += `
+                        <li class="list-group-item" onclick="toggleExpand('${cityName}')"><span class="expandsign"></span>${cityName}</li>
+                        <div id="${cityName}" class="expandable-content">
+                            ${
+                                cityData.map((s) => `
+                                    <div class="box_line">
+                                        <div class="leftcolumn">
+                                            <h3>Drogaria Total - ${s['Nome Fantasia']}</h3>
+                                            <br>
+                                            <p>Cidade: ${s['Cidade']}</p>
+                                            <p>Endereço: ${s['Endereco']} </p>
+                                            <p>Telefone: ${s['Telefone']}</p>
+                                        </div>
+                                        <div  class="rightcolumn ${cityName}">   
+                                        </div>
+                                    </div>
+                                `).join("")
+                            }
+                        </div>
+                    `;
+                }
+            });
+        }
+        }
+
+    // Obtém a referência para o campo de pesquisa
+    const inputPesquisa = document.getElementById('pesquisa');
+
+    // Adiciona um ouvinte de eventos para responder à entrada do usuário
+    const debouncedFilter = debounce(function(query) {
+        filterDataByCity(query);
+    }, 300); // Atraso de 300 milissegundos
+
+    inputPesquisa.addEventListener('input', function () {
+        const query = this.value; // Obtém o valor do campo de pesquisa
+        debouncedFilter(query); // Chama a função de filtro com a consulta do usuário
+    });
+    // Exibe todos os dados ao iniciar
+    filterDataByCity('');
+}
+
+// Busca os dados e inicia a página
+testeFetch('https://raw.githubusercontent.com/EstevaoSilvaSouza/base/main/db.json')
+    .then((data) => {
+        start(data);
+    })
+    .catch((error) => {
+        console.error('Erro ao carregar dados:', error);
+    });        
+    </script>
+
+</body>
+
+</html>

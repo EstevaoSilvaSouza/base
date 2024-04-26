@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Group com Div Expansível e Mapa</title>
+    <style>
+  .list-group {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 700px;
+  }
+  .list-group-item {
+    background-color: #dd0000;
+    padding: 10px 15px;
+    list-style-type: none;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+	  color:#FFF;
+    font-weight: bold;
+  }
+  .list-group-item:last-child {
+    border-bottom: none;
+  }
+  .list-group-item:hover {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	  color:#222;
+    font-weight: bold;
+  }
+  .expandable-content {
+    display: none;
+    padding: 10px;
+    margin-top: 0px;
+    width: 98%;
+    overflow: hidden;
+    transition: 0.8s;
+  }
+  .box_line{
+    border-bottom: 1px solid #0DA;
+    display: table;
+    width: 100%;
+    transition: 0.8s;
+  }
+  .leftcolumn {
+    width: 50%;
+    float: left;
+  }
+  .rightcolumn {
+    width: 50%;
+    float: right;
+  }
+
+  
+  .map-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+  }
+  .expandsign::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+  }
+  .expanded .expandsign::after {
+    content: '-';
+    transition: 0.8s;
+  }
+.loader {
+  border: 8px solid #dd0000 !important;
+  border-radius: 50% !important;
+  border-top: 8px solid #dd0000 !important;
+  width: 50px !important;
+  height: 50px !important;
+  animation: spin 2s linear infinite !important;
+  margin: auto !important;
+}
+
+  .inpt {
+            width: 100% !important;
+            height: 80px !important;
+            background-color: #dd0000 !important;
+            border: none !important;
+            display: flex !important;
+            border-radius: 7px!important ;
+            align-items: center !important;
+            justify-content: center !important;
+            margin-top: 25px !important;
+            margin-bottom: 10px !important;
+        }
+        .selecionar {
+            height: 49px;
+            width: 11%;
+            text-align: center;
+            color: #6b6868;
+            font-weight: bolder;
+            border-radius: 4px;
+            margin-left: 2px;
+            outline: none;
+            border: none;
+        }
+   
+        input {
+            width: 30% !important;
+            outline: none !important;
+            height: 50px !important;
+            border-radius: 5px !important;
+            color: #000 !important;
+            text-align: center !important;
+            font-weight: bolder !important;
+            transition: 0.6s all ease !important;
+            border: 2px solid #dd0000 !important;
+            background-color: #FFF !important;
+        }
+
+        input::placeholder{
+            color:#6b6868 !important;
+        }
+       #listItens {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0; /* Remover qualquer padding à esquerda */
+}
+
+        input:hover{
+            
+            width: 50% !important;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .rightcolumn {
+                float: none !important;
+                width: 100% !important;
+            }
+
+            input {
+                width: 75% !important;
+                margin-top: 10px !important;
+            }
+
+            input:hover{
+                width: 80% !important;
+            }
+            .inpt {
+                margin-top: 10px !important;
+                height: 150px !important;
+                flex-direction: column !important;
+            }
+
+            .selecionar{
+                width: 75% !important;
+            }
+
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="loader"></div>
+    <div class="inpt">
+        <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar pela cidade" />
+    </div>
+    <ul id="listItens">
+    </ul>
+
+    
+    <script>
+        let onLoad = true;
+          
+        
+               function toggle(id) {
+                   var content = document.getElementById(id);
+                   var allContents = document.querySelectorAll('.expandable-content');
+                   var allItems = document.querySelectorAll('.list-group-item');
+                   // Fecha todas as outras divs expandidas
+                   for (var i = 0; i < allContents.length; i++) {
+                       if (allContents[i].id !== id) {
+                           allContents[i].style.display = 'none';
+                       }
+                   }
+                   // Altera a classe para alterar o sinal
+                   for (var j = 0; j < allItems.length; j++) {
+                       if (allItems[j].classList.contains('expanded')) {
+                           allItems[j].classList.remove('expanded');
+                       }
+                   }
+                   // Abre ou fecha a div clicada e altera a classe
+                   if (content.style.display === "none" || content.style.display === "") {
+                       content.style.display = "block";
+                       document.querySelector('#' + id).classList.add('expanded');
+                   } else {
+                       content.style.display = "none";
+                       document.querySelector('#' + id).classList.remove('expanded');
+                   }
+               }
+       
+               async function toggleExpand(id, elemento) {
+                   let iframes = document.getElementsByClassName(id);
+                   let itemMap = JSON.parse(localStorage.getItem('items'))[id];
+                   for (let a = 0; a < iframes.length; a++) {
+                      iframes[a].innerHTML = `
+                           <iframe  width="420" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                           src="https://maps.google.com/maps?width=520&height=400&hl=pt&q=${itemMap[a].Lat},${itemMap[a].Lng}&hl=es;z=14&t=&z=12&ie=UTF8&iwloc=B&output=embed"></iframe>
+                       `
+                   }
+                   toggle(id)
+               }
+       
+               async function testeFetch(url) {
+                   const response = await fetch(url);
+                   const data = await response.json();
+                   document.getElementById('loader').style.display = 'none';
+                   return data
+               }
+       
+               // Função debounce para adicionar um pequeno atraso entre as chamadas da função
+               function debounce(func, wait) {
+                   let timeout;
+                   return function executedFunction(...args) {
+                       const later = () => {
+                           clearTimeout(timeout);
+                           func(...args);
+                       };
+                       clearTimeout(timeout);
+                       timeout = setTimeout(later, wait);
+                   };
+               }
+       
+        
+                 let i = 30;
+               let o = 0;
+               let dadosNew = [];
+               window.onscroll = function(){
+                if (!onLoad) {
+                    return;
+                }
+                if((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
+                       let dados = JSON.parse(localStorage.getItem('items'));
+                       
+                       document.getElementById('loader').style.display = 'block';
+                       
+                      
+                       if (i >= Object.keys(dados).length) {
+            document.getElementById('loader').style.display = 'none';
+            return;
+        }
+                       
+                            
+                            i = Math.min(i + 30, Object.keys(dados).length);
+                            dadosNew = [...dadosNew, ...Object.keys(dados).slice(o, i)]; // Adiciona novos dados à coleção acumulada
+                            o = i;
+        start(dadosNew, dados);
+
+                       
+                        
+                       
+       
+                   
+               }}
+       
+           // Função para iniciar a página com os dados
+           async function start(data,dat) {
+              
+               const listItem = document.getElementById("listItens");
+               localStorage.setItem("items", JSON.stringify(dat));
+       
+               // Função para filtrar os dados pelo nome da cidade
+               function filterDataByCity(query,type) {
+                   document.getElementById('loader').style.display = 'none';
+                   listItem.innerHTML = ''; // Limpa a lista antes de adicionar os itens filtrados
+       
+                  
+                  
+                   if(!query.trim()){
+        
+                       data.forEach((cityName) => {
+                           const cityData = dat[cityName];
+                           listItem.innerHTML += `
+                               <li class="list-group-item" onclick="toggleExpand('${cityName}')"><span class="expandsign"></span>${cityName}</li>
+                               <div id="${cityName}" class="expandable-content">
+                                   ${
+                                       cityData.map((s) => `
+                                           <div class="box_line">
+                                               <div class="leftcolumn">
+                                                   <h3>Drogaria Total - ${s['Nome Fantasia']}</h3>
+                                                   <br>
+                                                   <p>Cidade: ${s['Cidade']}</p>
+                                                   <p>Endereço: ${s['Endereco']} </p>
+                                                   <p>Telefone: ${s['Telefone']}</p>
+                                               </div>
+                                               <div  class="rightcolumn ${cityName}">   
+                                               </div>
+                                           </div>
+                                       `).join("")
+                                   }
+                               </div>
+                           `;
+                   });
+                   }
+                   else{
+       
+                   
+                   // Itera sobre os objetos do JSON e filtra aqueles que contêm a cidade especificada
+                   Object.keys(dat).forEach((cityName) => {
+                    
+                       if (cityName.toLowerCase().includes(query.toLowerCase())) {
+                           document.getElementById('loader').style.display = 'none';
+                           const cityData = dat[cityName];
+                           listItem.innerHTML += `
+                               <li class="list-group-item" onclick="toggleExpand('${cityName}')"><span class="expandsign"></span>${cityName}</li>
+                               <div id="${cityName}" class="expandable-content">
+                                   ${
+                                       cityData.map((s) => `
+                                           <div class="box_line">
+                                               <div class="leftcolumn">
+                                                   <h3>Drogaria Total - ${s['Nome Fantasia']}</h3>
+                                                   <br>
+                                                   <p>Cidade: ${s['Cidade']}</p>
+                                                   <p>Endereço: ${s['Endereco']} </p>
+                                                   <p>Telefone: ${s['Telefone']}</p>
+                                               </div>
+                                               <div  class="rightcolumn ${cityName}">   
+                                               </div>
+                                           </div>
+                                       `).join("")
+                                   }
+                               </div>
+                           `;
+                       }
+                   });
+               }
+               }
+             
+           // Obtém a referência para o campo de pesquisa
+           const inputPesquisa = document.getElementById('pesquisa');
+       
+           // Adiciona um ouvinte de eventos para responder à entrada do usuário
+           const debouncedFilter = debounce(function(query) {
+               filterDataByCity(query);
+           }, 300); // Atraso de 300 milissegundos
+       
+          
+           inputPesquisa.addEventListener('input', function () {
+               const query = this.value; // Obtém o valor do campo de pesquisa
+               console.log(this.value)
+               if(!query.trim()){
+                onLoad = true;
+                console.log('voltando carregra aqui');
+               }
+               else{
+               onLoad = false;
+               console.log('pausado de carregar aqui')
+               }
+               debouncedFilter(query); // Chama a função de filtro com a consulta do usuário
+           });
+           // Exibe todos os dados ao iniciar
+           filterDataByCity('');
+       }
+       
+       // Busca os dados e inicia a página
+       testeFetch('https://raw.githubusercontent.com/EstevaoSilvaSouza/base/main/db.json')
+           .then((data) => {
+            const t = Object.keys(data).slice(0,30);
+               start(t,data);
+           })
+           .catch((error) => {
+               console.error('Erro ao carregar dados:', error);
+           });        
+           </script>
+</body>
+
+</html>

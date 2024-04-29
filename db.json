@@ -305,6 +305,20 @@
             "Email": "apiai.thiago@drogariatotal.com.br"
         }
     ],
+	"Araras": [
+        {
+            "CNPJ": "Drogaria Total Avenida Loreto",
+            "Nome Empresarial": "Drogaria Total Avenida Loreto",
+            "Nome Fantasia": "Drogaria Total Avenida Loreto",
+            "Inscricao Estadual": "Drogaria Total Avenida Loreto",
+            "Endereco": "Avenida Loreto, 1272, JD das Flores",
+            "Cidade": "Araras",
+            "Lat": "-22.360264018488675",
+            "Lng": "-47.36297577301384",
+            "Telefone": "(19) 3544-8815 WhatsApp (19) 98705-6578",
+            "Email": ""
+        }
+    ],
     "Araçariguama": [
         {
             "CNPJ": "Araçariguama",

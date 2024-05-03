@@ -1,0 +1,539 @@
+{
+    "ARACARIGUAMA": [
+        {
+            "CNPJ": "50874095000140",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR",
+            "Endereco": "PC ALBERTINO DE CASTRO PRESTES,120 ,CENTRO ,18147000 ,ARACARIGUAMA",
+            "CEP": "18147000",
+            "Cidade": "ARACARIGUAMA",
+            "Lat": "-23.4390259",
+            "Lng": "-47.0625588",
+            "Telefone": "15996207350",
+            "Email": "15996207350"
+        }
+    ],
+    "AVANHANDAVA": [
+        {
+            "CNPJ": "10497520000105",
+            "Nome Empresarial": "DROGARIA BOM JESUS PREVER",
+            "Nome Fantasia": "DROGARIA BOM JESUS PREVER",
+            "Inscricao Estadual": "DROGARIA BOM JESUS PREVER",
+            "Endereco": "RUA BOA VISTA,746 ,CENTRO ,16360000 ,AVANHANDAVA",
+            "CEP": "16360000",
+            "Cidade": "AVANHANDAVA",
+            "Lat": "-21.4609581",
+            "Lng": "-49.9488745",
+            "Telefone": "1836511475",
+            "Email": "1836511475"
+        }
+    ],
+    "BARRETOS": [
+        {
+            "CNPJ": "7045796000490",
+            "Nome Empresarial": "DROGARIA MARTINS 3",
+            "Nome Fantasia": "DROGARIA MARTINS 3",
+            "Inscricao Estadual": "DROGARIA MARTINS 3",
+            "Endereco": "AV 17,727 ,CENTRO ,14780290 ,BARRETOS",
+            "CEP": "14780290",
+            "Cidade": "BARRETOS",
+            "Lat": "-20.5594444",
+            "Lng": "-48.5675663",
+            "Telefone": "17997337616",
+            "Email": "17997337616"
+        }
+    ],
+    "CATANDUVA": [
+        {
+            "CNPJ": "22455864000483",
+            "Nome Empresarial": "DROGARIA ULTRAPOPULAR",
+            "Nome Fantasia": "DROGARIA ULTRAPOPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRAPOPULAR",
+            "Endereco": "R BRASIL,432 ,CENTRO ,15800030 ,CATANDUVA",
+            "CEP": "15800030",
+            "Cidade": "CATANDUVA",
+            "Lat": "-21.1342565",
+            "Lng": "-48.9718533",
+            "Telefone": "1635245747",
+            "Email": "1635245747"
+        }
+    ],
+    "IBITINGA": [
+        {
+            "CNPJ": "22455864001102",
+            "Nome Empresarial": "DROGARIA ULTRA POPULAR",
+            "Nome Fantasia": "DROGARIA ULTRA POPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRA POPULAR",
+            "Endereco": "R PRUDENTE DE MORAES,635 ,CENTRO ,14940103 ,IBITINGA",
+            "CEP": "14940103",
+            "Cidade": "IBITINGA",
+            "Lat": "-21.7586815",
+            "Lng": "-48.8277722",
+            "Telefone": "1734656010",
+            "Email": "1734656010"
+        },
+        {
+            "CNPJ": "154801000292",
+            "Nome Empresarial": "PAULO CEZAR ZAPATA E CIA ",
+            "Nome Fantasia": "PAULO CEZAR ZAPATA E CIA ",
+            "Inscricao Estadual": "PAULO CEZAR ZAPATA E CIA ",
+            "Endereco": "AVENIDA JORNALISTA ROQUE DE ROSA,605 ,JARDIM PAULISTA ,14940420 ,IBITINGA",
+            "CEP": "14940420",
+            "Cidade": "IBITINGA",
+            "Lat": "-21.7533580",
+            "Lng": "-48.8376096",
+            "Telefone": "1633425931",
+            "Email": "1633425931"
+        }
+    ],
+    "ILHA SOLTEIRA": [
+        {
+            "CNPJ": "32908854000167",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR ILHA SOLTEIRA",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR ILHA SOLTEIRA",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR ILHA SOLTEIRA",
+            "Endereco": "AV BRASIL SUL,465 ,ZONA SUL ,15385000 ,ILHA SOLTEIRA",
+            "CEP": "15385000",
+            "Cidade": "ILHA SOLTEIRA",
+            "Lat": "-20.4303678",
+            "Lng": "-51.3470479",
+            "Telefone": "18996403399",
+            "Email": "18996403399"
+        },
+        {
+            "CNPJ": "27814721000191",
+            "Nome Empresarial": "DROGARIA A. G. ILHA SOLTEIRA",
+            "Nome Fantasia": "DROGARIA A. G. ILHA SOLTEIRA",
+            "Inscricao Estadual": "DROGARIA A. G. ILHA SOLTEIRA",
+            "Endereco": "AV BRASIL SUL,351 ,ZONA SUL ,15385000 ,ILHA SOLTEIRA",
+            "CEP": "15385000",
+            "Cidade": "ILHA SOLTEIRA",
+            "Lat": "-20.4296981",
+            "Lng": "-51.3464892",
+            "Telefone": "1837421503",
+            "Email": "1837421503"
+        },
+        {
+            "CNPJ": "5746794000150",
+            "Nome Empresarial": "DROGARIAS FARMAIS",
+            "Nome Fantasia": "DROGARIAS FARMAIS",
+            "Inscricao Estadual": "DROGARIAS FARMAIS",
+            "Endereco": "AV BRASIL SUL,143 ,CENTRO ,15385000 ,ILHA SOLTEIRA",
+            "CEP": "15385000",
+            "Cidade": "ILHA SOLTEIRA",
+            "Lat": "-20.4285064",
+            "Lng": "-51.3449781",
+            "Telefone": "18997810137",
+            "Email": "18997810137"
+        }
+    ],
+    "ITAPURA": [
+        {
+            "CNPJ": "5746794000231",
+            "Nome Empresarial": "GINEUZA W. DANTAS DE MOURA E CIA LTDA",
+            "Nome Fantasia": "GINEUZA W. DANTAS DE MOURA E CIA LTDA",
+            "Inscricao Estadual": "GINEUZA W. DANTAS DE MOURA E CIA LTDA",
+            "Endereco": "AV MARECHAL ARTHUR DA COSTA E SILVA,970 ,CENTRO ,15390000 ,ITAPURA",
+            "CEP": "15390000",
+            "Cidade": "ITAPURA",
+            "Lat": "-20.6431979",
+            "Lng": "-51.5075547",
+            "Telefone": "18997810137",
+            "Email": "18997810137"
+        }
+    ],
+    "JAU": [
+        {
+            "CNPJ": "22455864000726",
+            "Nome Empresarial": "DROGARIA ULTRAPOPULAR",
+            "Nome Fantasia": "DROGARIA ULTRAPOPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRAPOPULAR",
+            "Endereco": "R LOURENCO PRADO,300-B ,CENTRO ,17201000 ,JAU",
+            "CEP": "17201000",
+            "Cidade": "JAU",
+            "Lat": "-22.2958467",
+            "Lng": "-48.5567821",
+            "Telefone": "16997700077",
+            "Email": "16997700077"
+        }
+    ],
+    "LEME": [
+        {
+            "CNPJ": "22455864001021",
+            "Nome Empresarial": "DROGARIA ULTRA POPULAR",
+            "Nome Fantasia": "DROGARIA ULTRA POPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRA POPULAR",
+            "Endereco": "AV 29 DE AGOSTO,500 ,CENTRO ,13610210 ,LEME",
+            "CEP": "13610210",
+            "Cidade": "LEME",
+            "Lat": "-22.1848593",
+            "Lng": "-47.3873711",
+            "Telefone": "1734656010",
+            "Email": "1734656010"
+        }
+    ],
+    "MATAO": [
+        {
+            "CNPJ": "22455864000300",
+            "Nome Empresarial": "DROGARIA ULTRAPOPULAR",
+            "Nome Fantasia": "DROGARIA ULTRAPOPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRAPOPULAR",
+            "Endereco": "RUA RUI BARBOSA,945 ,CENTRO ,15990030 ,MATAO",
+            "CEP": "15990030",
+            "Cidade": "MATAO",
+            "Lat": "-21.6029561",
+            "Lng": "-48.3648992",
+            "Telefone": "1633827128",
+            "Email": "1633827128"
+        }
+    ],
+    "MIRANDOPOLIS": [
+        {
+            "CNPJ": "12316968000100",
+            "Nome Empresarial": "DROGARIA POUPE AQUI",
+            "Nome Fantasia": "DROGARIA POUPE AQUI",
+            "Inscricao Estadual": "DROGARIA POUPE AQUI",
+            "Endereco": "R 9 DE JULHO,1264 ,CENTRO ,16800000 ,MIRANDOPOLIS",
+            "CEP": "16800000",
+            "Cidade": "MIRANDOPOLIS",
+            "Lat": "-21.1319761",
+            "Lng": "-51.1030381",
+            "Telefone": "18991833279",
+            "Email": "18991833279"
+        },
+        {
+            "CNPJ": "4405029000104",
+            "Nome Empresarial": "DROGARIAS FARMAIS",
+            "Nome Fantasia": "DROGARIAS FARMAIS",
+            "Inscricao Estadual": "DROGARIAS FARMAIS",
+            "Endereco": "AV 9 DE JULHO,1197 ,CENTRO ,16800000 ,MIRANDOPOLIS",
+            "CEP": "16800000",
+            "Cidade": "MIRANDOPOLIS",
+            "Lat": "-21.1318980",
+            "Lng": "-51.1018699",
+            "Telefone": "17996033752",
+            "Email": "17996033752"
+        }
+    ],
+    "MONTE ALTO": [
+        {
+            "CNPJ": "7045796000300",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR MONTE ALTO",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR MONTE ALTO",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR MONTE ALTO",
+            "Endereco": "R NHONHO LIVRAMENTO,1715 ,CENTRO ,15910000 ,MONTE ALTO",
+            "CEP": "15910000",
+            "Cidade": "MONTE ALTO",
+            "Lat": "-21.2628800",
+            "Lng": "-48.4981349",
+            "Telefone": "1632433757",
+            "Email": "1632433757"
+        }
+    ],
+    "MONTE APRAZIVEL": [
+        {
+            "CNPJ": "7045796000652",
+            "Nome Empresarial": "DROGARIA MARTINS 5",
+            "Nome Fantasia": "DROGARIA MARTINS 5",
+            "Inscricao Estadual": "DROGARIA MARTINS 5",
+            "Endereco": "PC CONEGO LAURENTINO,54 ,CENTRO ,15150000 ,MONTE APRAZIVEL",
+            "CEP": "15150000",
+            "Cidade": "MONTE APRAZIVEL",
+            "Lat": "-20.7734904",
+            "Lng": "-49.7121931",
+            "Telefone": "1732751962",
+            "Email": "1732751962"
+        }
+    ],
+    "OLIMPIA": [
+        {
+            "CNPJ": "55862551000237",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR OLIMPIA CENTRO",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR OLIMPIA CENTRO",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR OLIMPIA CENTRO",
+            "Endereco": "R NOVE DE JULHO,1000 ,CENTRO ,15400000 ,OLIMPIA",
+            "CEP": "15400000",
+            "Cidade": "OLIMPIA",
+            "Lat": "-20.7391372",
+            "Lng": "-48.9134522",
+            "Telefone": "1732793800",
+            "Email": "1732793800"
+        },
+        {
+            "CNPJ": "55862551000580",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR OLIMPIA AVENIDA",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR OLIMPIA AVENIDA",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR OLIMPIA AVENIDA",
+            "Endereco": "AV AURORA FORTI NEVES,633 ,JARDIM GLORIA ,15400000 ,OLIMPIA",
+            "CEP": "15400000",
+            "Cidade": "OLIMPIA",
+            "Lat": "-20.7293696",
+            "Lng": "-48.9147340",
+            "Telefone": "1732793800",
+            "Email": "1732793800"
+        }
+    ],
+    "PEDERNEIRAS": [
+        {
+            "CNPJ": "10316872000117",
+            "Nome Empresarial": "FARMACIA DO CACHUCHO",
+            "Nome Fantasia": "FARMACIA DO CACHUCHO",
+            "Inscricao Estadual": "FARMACIA DO CACHUCHO",
+            "Endereco": "R CORONEL COIMBRA,161 ,CENTRO ,17280003 ,PEDERNEIRAS",
+            "CEP": "17280003",
+            "Cidade": "PEDERNEIRAS",
+            "Lat": "-22.3506717",
+            "Lng": "-48.7764058",
+            "Telefone": "14997828881",
+            "Email": "14997828881"
+        }
+    ],
+    "PENAPOLIS": [
+        {
+            "CNPJ": "53889242000144",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR PENAPOLIS",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR PENAPOLIS",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR PENAPOLIS",
+            "Endereco": "AV LUIZ OSORIO,691 ,CENTRO ,16300013 ,PENAPOLIS",
+            "CEP": "16300013",
+            "Cidade": "PENAPOLIS",
+            "Lat": "-21.4177857",
+            "Lng": "-50.0752197",
+            "Telefone": "18997749661",
+            "Email": "18997749661"
+        }
+    ],
+    "PEREIRA BARRETO": [
+        {
+            "CNPJ": "5407511000146",
+            "Nome Empresarial": "ANTONIO NUGOLI DE MOURA E CIA",
+            "Nome Fantasia": "ANTONIO NUGOLI DE MOURA E CIA",
+            "Inscricao Estadual": "ANTONIO NUGOLI DE MOURA E CIA",
+            "Endereco": "AV BRASIL,1282 ,CENTRO ,15370000 ,PEREIRA BARRETO",
+            "CEP": "15370000",
+            "Cidade": "PEREIRA BARRETO",
+            "Lat": "-20.6463191",
+            "Lng": "-51.1115674",
+            "Telefone": "18991967203",
+            "Email": "18991967203"
+        }
+    ],
+    "PERUIBE": [
+        {
+            "CNPJ": "42403570000172",
+            "Nome Empresarial": "DROGARIA POUPAQUI",
+            "Nome Fantasia": "DROGARIA POUPAQUI",
+            "Inscricao Estadual": "DROGARIA POUPAQUI",
+            "Endereco": "AV PADRE ANCHIETA,1449 ,LOTEAMENTO SOARES ,11750000 ,PERUIBE",
+            "CEP": "11750000",
+            "Cidade": "PERUIBE",
+            "Lat": "-24.3192202",
+            "Lng": "-46.9951605",
+            "Telefone": "13997222598",
+            "Email": "13997222598"
+        }
+    ],
+    "PINDORAMA": [
+        {
+            "CNPJ": "19742512000151",
+            "Nome Empresarial": "LIGEFARMA",
+            "Nome Fantasia": "LIGEFARMA",
+            "Inscricao Estadual": "LIGEFARMA",
+            "Endereco": "RUA QUINZE DE NOVEMBRO, 841, CENTRO ,15830000 ,PINDORAMA",
+            "CEP": "15830000",
+            "Cidade": "PINDORAMA",
+            "Lat": "-21.1878018",
+            "Lng": "-48.9058685",
+            "Telefone": "1735723600",
+            "Email": "1735723600"
+        }
+    ],
+    "RIBEIRAO PRETO": [
+        {
+            "CNPJ": "22455864000645",
+            "Nome Empresarial": "DROGARIA ULTRAPOPULAR",
+            "Nome Fantasia": "DROGARIA ULTRAPOPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRAPOPULAR",
+            "Endereco": "AV DOM PEDRO I,641 ,IPIRANGA ,14055620 ,RIBEIRAO PRETO",
+            "CEP": "14055620",
+            "Cidade": "RIBEIRAO PRETO",
+            "Lat": "-21.1568526",
+            "Lng": "-47.8190023",
+            "Telefone": "16999946729",
+            "Email": "16999946729"
+        }
+    ],
+    "SANTA FE DO SUL": [
+        {
+            "CNPJ": "2842265000162",
+            "Nome Empresarial": "FARMAVIC DROGARIA E PERFUMARIA",
+            "Nome Fantasia": "FARMAVIC DROGARIA E PERFUMARIA",
+            "Inscricao Estadual": "FARMAVIC DROGARIA E PERFUMARIA",
+            "Endereco": "R SETE,763 ,CENTRO ,15775000 ,SANTA FE DO SUL",
+            "CEP": "15775000",
+            "Cidade": "SANTA FE DO SUL",
+            "Lat": "-20.2102277",
+            "Lng": "-50.9282751",
+            "Telefone": "17996599504",
+            "Email": "17996599504"
+        }
+    ],
+    "SAO CARLOS": [
+        {
+            "CNPJ": "22455864000130",
+            "Nome Empresarial": "DROGARIA ULTRAPOPULAR",
+            "Nome Fantasia": "DROGARIA ULTRAPOPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRAPOPULAR",
+            "Endereco": "AVENIDA COMENDADOR ALFREDO MAFFEI,2379 ,JARDIM SAO CARLOS ,13561270 ,SAO CARLOS",
+            "CEP": "13561270",
+            "Cidade": "SAO CARLOS",
+            "Lat": "-22.0202537",
+            "Lng": "-47.8919487",
+            "Telefone": "",
+            "Email": ""
+        },
+        {
+            "CNPJ": "22455864000564",
+            "Nome Empresarial": "DROGARIA ULTRAPOPULAR",
+            "Nome Fantasia": "DROGARIA ULTRAPOPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRAPOPULAR",
+            "Endereco": "R GEMINIANO COSTA,640 ,JARDIM SAO CARLOS ,13560641 ,SAO CARLOS",
+            "CEP": "13560641",
+            "Cidade": "SAO CARLOS",
+            "Lat": "-22.0207631",
+            "Lng": "-47.8911048",
+            "Telefone": "1633418766",
+            "Email": "1633418766"
+        }
+    ],
+    "SAO JOSE DO RIO PRETO": [
+        {
+            "CNPJ": "7045796000229",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR RIO PRETO",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR RIO PRETO",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR RIO PRETO",
+            "Endereco": "AV ALFREDO TEODORO DE OLIVEIRA,2180 ,JARDIM DAS OLIVEIRAS ,15047000 ,SAO JOSE DO RIO PRETO",
+            "CEP": "15047000",
+            "Cidade": "SAO JOSE DO RIO PRETO",
+            "Lat": "-20.7771329",
+            "Lng": "-49.4055267",
+            "Telefone": "17982270020",
+            "Email": "17982270020"
+        },
+        {
+            "CNPJ": "7045796000814",
+            "Nome Empresarial": "DROGARIA MARTINS",
+            "Nome Fantasia": "DROGARIA MARTINS",
+            "Inscricao Estadual": "DROGARIA MARTINS",
+            "Endereco": "R VOLUNTARIOS DE SAO PAULO,2638 ,CENTRO ,15015200 ,SAO JOSE DO RIO PRETO",
+            "CEP": "15015200",
+            "Cidade": "SAO JOSE DO RIO PRETO",
+            "Lat": "-20.8093943",
+            "Lng": "-49.3777808",
+            "Telefone": "17982270020",
+            "Email": "17982270020"
+        },
+        {
+            "CNPJ": "48592832000170",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR",
+            "Endereco": "R MARECHAL DEODORO,2588 ,BOA VISTA - BAIRRO ,15025070 ,SAO JOSE DO RIO PRETO",
+            "CEP": "15025070",
+            "Cidade": "SAO JOSE DO RIO PRETO",
+            "Lat": "-20.8100774",
+            "Lng": "-49.3850540",
+            "Telefone": "17996253732",
+            "Email": "17996253732"
+        },
+        {
+            "CNPJ": "22455864000211",
+            "Nome Empresarial": "DROGARIA ULTRAPOPULAR",
+            "Nome Fantasia": "DROGARIA ULTRAPOPULAR",
+            "Inscricao Estadual": "DROGARIA ULTRAPOPULAR",
+            "Endereco": "R ANTONIO DE GODOY,3065 ,CENTRO ,15015100 ,SAO JOSE DO RIO PRETO",
+            "CEP": "15015100",
+            "Cidade": "SAO JOSE DO RIO PRETO",
+            "Lat": "-20.8136655",
+            "Lng": "-49.3792996",
+            "Telefone": "1733055414",
+            "Email": "1733055414"
+        }
+    ],
+    "SAO MANUEL": [
+        {
+            "CNPJ": "48390330000167",
+            "Nome Empresarial": "DROGARIA POPULAR ",
+            "Nome Fantasia": "DROGARIA POPULAR ",
+            "Inscricao Estadual": "DROGARIA POPULAR ",
+            "Endereco": "R XV DE NOVEMBRO,219 ,CENTRO ,18650000 ,SAO MANUEL",
+            "CEP": "18650000",
+            "Cidade": "SAO MANUEL",
+            "Lat": "-22.7297361",
+            "Lng": "-48.6135102",
+            "Telefone": "14991640309",
+            "Email": "14991640309"
+        }
+    ],
+    "SAO PAULO": [
+        {
+            "CNPJ": "38353428000190",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR SAO PAULO",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR SAO PAULO",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR SAO PAULO",
+            "Endereco": "R DA CANTAREIRA,557 ,CENTRO ,1024100 ,SAO PAULO",
+            "CEP": "1024100",
+            "Cidade": "SAO PAULO",
+            "Lat": "-23.5392991",
+            "Lng": "-46.6293204",
+            "Telefone": "11910244228",
+            "Email": "11910244228"
+        }
+    ],
+    "SAO ROQUE": [
+        {
+            "CNPJ": "40916930000104",
+            "Nome Empresarial": "FARMA VIDA POPULAR SÃO ROQUE",
+            "Nome Fantasia": "FARMA VIDA POPULAR SÃO ROQUE",
+            "Inscricao Estadual": "FARMA VIDA POPULAR SÃO ROQUE",
+            "Endereco": "R QUINZE DE NOVEMBRO,24 ,CENTRO ,18130410 ,SAO ROQUE",
+            "CEP": "18130410",
+            "Cidade": "SAO ROQUE",
+            "Lat": "-23.5309902",
+            "Lng": "-47.1352919",
+            "Telefone": "1147126384",
+            "Email": "1147126384"
+        }
+    ],
+    "TANABI": [
+        {
+            "CNPJ": "40570869000196",
+            "Nome Empresarial": "DROGARIA TOTAL POPULAR UNIDADE TANABI",
+            "Nome Fantasia": "DROGARIA TOTAL POPULAR UNIDADE TANABI",
+            "Inscricao Estadual": "DROGARIA TOTAL POPULAR UNIDADE TANABI",
+            "Endereco": "R CORONEL MILITAO,795 ,CENTRO ,15170000 ,TANABI",
+            "CEP": "15170000",
+            "Cidade": "TANABI",
+            "Lat": "-20.6259293",
+            "Lng": "-49.6604761",
+            "Telefone": "17997890955",
+            "Email": "17997890955"
+        }
+    ],
+    "URANIA": [
+        {
+            "CNPJ": "19999915000180",
+            "Nome Empresarial": "MEDICAL FARMA MAIS POPULAR",
+            "Nome Fantasia": "MEDICAL FARMA MAIS POPULAR",
+            "Inscricao Estadual": "MEDICAL FARMA MAIS POPULAR",
+            "Endereco": "AV PRESIDENTE KENNEDY,147 ,CENTRO ,15760000 ,URANIA",
+            "CEP": "15760000",
+            "Cidade": "URANIA",
+            "Lat": "-20.2471500",
+            "Lng": "-50.6444838",
+            "Telefone": "17997236049",
+            "Email": "17997236049"
+        }
+    ]
+}

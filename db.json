@@ -1713,19 +1713,7 @@
         }
     ],
     "CAPAO BONITO": [
-        {
-            "CNPJ": "32172821000100",
-            "Nome Empresarial": "FARMA NOSSA",
-            "Nome Fantasia": "FARMA NOSSA",
-            "Inscricao Estadual": "FARMA NOSSA",
-            "Endereco": "R QUINTINO BOCAIUVA,250 ,CENTRO ,18300390 ,CAPAO BONITO",
-            "CEP": "18300390",
-            "Cidade": "CAPAO BONITO",
-            "Lat": "-24.0059261",
-            "Lng": "-48.3492153",
-            "Telefone": "15996511016",
-            "Email": "15996511016"
-        }
+        
     ],
     "CARAGUATATUBA": [
         {
@@ -2322,19 +2310,6 @@
             "Lng": "-47.4119570",
             "Telefone": "1637049055",
             "Email": "1637049055"
-        },
-        {
-            "CNPJ": "7302509000138",
-            "Nome Empresarial": "POLO E POLO DROGARIA",
-            "Nome Fantasia": "POLO E POLO DROGARIA",
-            "Inscricao Estadual": "POLO E POLO DROGARIA",
-            "Endereco": "RUA JOSE PUCINELLI,300 ,PQ VICENTE LEPORACE ,14407022 ,FRANCA",
-            "CEP": "14407022",
-            "Cidade": "FRANCA",
-            "Lat": "-20.5022270",
-            "Lng": "-47.4106710",
-            "Telefone": "16991730926",
-            "Email": "16991730926"
         },
         {
             "CNPJ": "7196516000100",
@@ -6179,19 +6154,6 @@
             "Email": "1636238494"
         },
         {
-            "CNPJ": "30688627000148",
-            "Nome Empresarial": "TOTAL POPULAR FARMA",
-            "Nome Fantasia": "TOTAL POPULAR FARMA",
-            "Inscricao Estadual": "TOTAL POPULAR FARMA",
-            "Endereco": "R SAO SEBASTIAO,879 ,CENTRO ,14015040 ,RIBEIRAO PRETO",
-            "CEP": "14015040",
-            "Cidade": "RIBEIRAO PRETO",
-            "Lat": "-21.1779020",
-            "Lng": "-47.8070654",
-            "Telefone": "1636109090",
-            "Email": "1636109090"
-        },
-        {
             "CNPJ": "18087030000142",
             "Nome Empresarial": "DROGARIA TOTAL - UNIDADE PROCÓPIO",
             "Nome Fantasia": "DROGARIA TOTAL - UNIDADE PROCÓPIO",
@@ -6659,19 +6621,6 @@
             "Lng": "-47.9119083",
             "Telefone": "16996334001",
             "Email": "16996334001"
-        },
-        {
-            "CNPJ": "11377184000120",
-            "Nome Empresarial": "DROGA RIO IV",
-            "Nome Fantasia": "DROGA RIO IV",
-            "Inscricao Estadual": "DROGA RIO IV",
-            "Endereco": "AV BRUNO RUGGIERO FILHO,1307 ,PARQUE SANTA FELICIA JARDIM ,13562420 ,SAO CARLOS",
-            "CEP": "13562420",
-            "Cidade": "SAO CARLOS",
-            "Lat": "-22.0005040",
-            "Lng": "-47.9183029",
-            "Telefone": "16996354746",
-            "Email": "16996354746"
         },
         {
             "CNPJ": "5849920000100",

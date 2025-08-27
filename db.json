@@ -1190,9 +1190,9 @@
         },
         {
             "CNPJ": "5567426000145",
-            "Nome Empresarial": "DROGARIA NOSSA SENHORA DE FATIMA",
-            "Nome Fantasia": "DROGARIA NOSSA SENHORA DE FATIMA",
-            "Inscricao Estadual": "DROGARIA NOSSA SENHORA DE FATIMA",
+            "Nome Empresarial": "DROGARIA JARDIM AMERICA",
+            "Nome Fantasia": "DROGARIA JARDIM AMERICA",
+            "Inscricao Estadual": "DROGARIA JARDIM AMERICA",
             "Endereco": "AV. NOSSA SRA. DE FÁTIMA, 6-25 - JARDIM PAULISTA ,17017337 ,BAURU",
             "CEP": "17017337",
             "Cidade": "BAURU",
@@ -8305,4 +8305,5 @@
         }
     ]
 }
+
 
